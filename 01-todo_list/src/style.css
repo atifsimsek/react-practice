@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+
+}
+
+.container {
+    width: 65%;
+    height: 100vh;
+    background-color: whitesmoke;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form {
+    border-radius: 10px;
+    width: 50%;
+    min-height: 65%;
+    background: linear-gradient(rgba(0.6, 0.1, 0.1, 0), #ffffff88), rgb(21, 211, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 28px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+.form h1 {
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    margin: 3.5rem 0;
+    color: whitesmoke
+}
+
+.form .add-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.form .add-area input {
+    border: none;
+    width: 40%;
+    margin-right: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #abb4ad;
+    padding: 0.5rem;
+}
+
+.form .add-area input:focus {
+    outline: none;
+
+
+
+}
+
+.form .add-area input::placeholder {
+    padding: 0.1rem;
+
+
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    padding: 0.35rem 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #abb0b4;
+    cursor: pointer;
+
+
+}
+
+.clear-btn{
+    margin: 2rem 0 3rem 0;
+}
+
+.btn:hover {
+    background: rgb(223, 255, 234);
+
+}
+
+.form .todos {
+    color: rgb(255, 255, 255);
+    margin: 1rem 0 4rem 0;
+    width: 100%;
+}
+
+.form .todos ul li {
+    width: 100%;
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin: 0 4rem 2rem 0;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+
+.complated {
+    text-decoration: line-through;
+}
+
+@media (max-width:1024px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .container .form {
+
+        width: 65%;
+
+    }
+
+    .form h1 {
+        margin-top: 5rem;
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media (max-width:720px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .container .form {
+
+        width: 90%;
+
+    }
+
+    .form h1 {
+        margin-top: 8rem;
+
+    }
+
+}
