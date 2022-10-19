@@ -8,11 +8,18 @@ import { addCart } from '../actions/actions';
 
 const List = props => {
 
+
+
+  const totalBook = props.cart.reduce((total, book) => total = total + book.count, 0);
+
+  
+
+
   return (
     <div className='box'>
       <h2>
         <span>Book List</span>
-        <Link to="/cart">My Cart</Link>
+        <Link to="/cart">My Cart ({totalBook})</Link>
       </h2>
       {
         props.bookList.map(book => (
@@ -39,7 +46,8 @@ const List = props => {
 
 const mapStatetoProps = state => {
   return {
-    bookList: state.bookList
+    bookList: state.bookList,
+    cart: state.cart
   }
 }
 

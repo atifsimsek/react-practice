@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
-import './App.css';
+
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Cart } from './components/Cart';
 import { Products } from './components/Products';

@@ -9,13 +9,15 @@ import { decrase, increase, remove } from '../actions/actions';
 const ShopCart = (props) => {
 
   const totalAmount = props.cart.reduce((total, book) => total = total + (book.price * book.count), 0).toFixed(2);
+  const totalBook = props.cart.reduce((total, book) => total = total + book.count, 0);
+
 
   return (
 
     <div className='box'>
       <h2>
-        <Link to="/">Book List</Link>
-        <span>My Cart</span>
+        <Link to="/">Book List </Link>
+        <span>My Cart ({totalBook})</span>
       </h2>
       <h3>Toplam Sepet Tutarı : {totalAmount}</h3>
 
